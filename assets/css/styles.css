@@ -52,3 +52,7 @@
 .with-opacity80{
 	background: rgba(238,238,238,0.8);
 }
+
+#inline-logo{
+	display: inline-block;
+}
