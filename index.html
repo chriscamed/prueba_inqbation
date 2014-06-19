@@ -188,6 +188,8 @@
 
 		function openFancy(name,address,categories,likes,photos)
 		{
+			$('#photos').css('display','block');
+            $('#photoList').css('display','none');
             $('#title').text(name);
             $('#address').text("Address: " + address);
             $('#categories').text("Categories: " + categories);
@@ -199,6 +201,8 @@
 
 		function openFancySearch(id,name,address,categories)
 		{
+			$('#photos').css('display','none');
+            $('#photoList').css('display','block');
             $('#title').text(name);
             $('#address').text("Address: " + address);
             $('#categories').text("Categories: " + categories);
@@ -218,7 +222,6 @@
             		}
 
             		$('#likes').text("Likes: " + likes);
-            		$('#photos').css('display','none');
             		$('#photoList').html(photos);
 
 
